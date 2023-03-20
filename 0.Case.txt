@@ -1,0 +1,31 @@
+Case:
+
+ 
+
+Abaixo temos a descrição do problema prático para que você nos envie sua solução através de um repositório no GitHub.
+
+O objetivo do exercício não é avaliar a melhor performance, mas entender como você estrutura, organiza e apresenta a solução de um problema.
+
+ 
+
+Neste case, você precisa implementar uma solução que:
+
+•           Consiga buscar tweets com uma determinada “HashTag”, por exemplo, #covid19.
+
+•            Armazene os resultados em formato Parquet
+
+•            Estruture um datalake para que seja possível consolidar dados analíticos por hashtag e posteriormente consultar informações coletadas de forma batch
+
+Como sugestão, você poderia usar: 
+
+•            Spark/Scala – Para extração, escrita e consolidação
+
+•            Airflow – Orquestração do processamento
+
+•            Docker / Compose – Para deploy da aplicação
+
+Tópicos que consideramos relevantes:
+
+•            Testes unitários
+
+•            Estrutura de código / Boas práticas de Software Engineering e Data Engineering
