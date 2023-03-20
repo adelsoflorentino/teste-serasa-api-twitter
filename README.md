@@ -22,16 +22,16 @@
 
 ###### 2 - A Solução:
 
-	Esta aplicação foi desenvolvida em Python utilizando [Pyspark](https://spark.apache.org/docs/latest/api/python/index.html) 
+Esta aplicação foi desenvolvida em Python utilizando [Pyspark](https://spark.apache.org/docs/latest/api/python/index.html) 
 e [Tweepy](https://www.tweepy.org/) para conexão com a API do Twitter.
 
-	A aplicação foi dividida em duas etapas:
+A aplicação foi dividida em duas etapas:
 
 --- 1º Etapa
 	
-	[1.TwitterListenerAPI.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/1.TwitterListenerAPI.py)
+[1.TwitterListenerAPI.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/1.TwitterListenerAPI.py)
 	
-	Realiza o streaming de tweets em tempo real no qual dada uma lista de *keywords* a serem buscados em tweets, a aplicação irá:
+Realiza o streaming de tweets em tempo real no qual dada uma lista de *keywords* a serem buscados em tweets, a aplicação irá:
 	
 - Realizar a conexão com a API de streaming do Twitter;
 - Baixar os tweets em tempo real;
@@ -39,9 +39,9 @@ e [Tweepy](https://www.tweepy.org/) para conexão com a API do Twitter.
 
 --- 2º Etapa
 
-	[2.DataLake.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/2.DataLake.py)
+[2.DataLake.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/2.DataLake.py)
 	
-	Criar um Datalake com os dados salvos na *layer_bronze* no qual sua função é a cada 60 minutos:
+Criar um Datalake com os dados salvos na *layer_bronze* no qual sua função é a cada 60 minutos:
 
 - Ler os dados salvos na *layer_bronze* na última hora;
 - Realizar os devidos tratamentos dos dados como:
@@ -53,9 +53,9 @@ e [Tweepy](https://www.tweepy.org/) para conexão com a API do Twitter.
 
 --- Testes
 
-	[3.DataLake_Viz.ipynb](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/3.DataLake_Viz.ipynb)
+[3.DataLake_Viz.ipynb](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/3.DataLake_Viz.ipynb)
 	
-	Testes unitarios realizados.
+Testes unitarios realizados.
 
 
 ###### 3 - Pontos a serem implementados:
@@ -71,5 +71,5 @@ e [Tweepy](https://www.tweepy.org/) para conexão com a API do Twitter.
 
 ###### 5 - Arquitetura inicial:
 
-	[Arquitetura](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/Arquitetura.png)
+[Arquitetura](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/Arquitetura.png)
 
