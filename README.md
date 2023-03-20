@@ -28,18 +28,20 @@ e [Tweepy](https://www.tweepy.org/) para conexão com a API do Twitter.
 	A aplicação foi dividida em duas etapas:
 
 --- 1º Etapa
-
-	Realiza o streaming de tweets em tempo real, código do arquivo [1.TwitterListenerAPI.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/1.TwitterListenerAPI.py),
-no qual dada uma lista de *keywords* a serem buscados em tweets, a aplicação irá:
-
+	
+	[1.TwitterListenerAPI.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/1.TwitterListenerAPI.py)
+	
+	Realiza o streaming de tweets em tempo real no qual dada uma lista de *keywords* a serem buscados em tweets, a aplicação irá:
+	
 - Realizar a conexão com a API de streaming do Twitter;
 - Baixar os tweets em tempo real;
 - Salvá-los em uma *layer_bronze* de dados de forma particionada e em arquivos no formato parquet.
 
 --- 2º Etapa
 
-	Criar um Datalake com os dados salvos na *layer_bronze*, código [2.DataLake.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/2.DataLake.py),
-no qual sua função é a cada 60 minutos:
+	[2.DataLake.py](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/2.DataLake.py)
+	
+	Criar um Datalake com os dados salvos na *layer_bronze* no qual sua função é a cada 60 minutos:
 
 - Ler os dados salvos na *layer_bronze* na última hora;
 - Realizar os devidos tratamentos dos dados como:
@@ -51,7 +53,9 @@ no qual sua função é a cada 60 minutos:
 
 --- Testes
 
-	Testes unitarios realizados [3.DataLake_Viz.ipynb](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/3.DataLake_Viz.ipynb)
+	[3.DataLake_Viz.ipynb](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/3.DataLake_Viz.ipynb)
+	
+	Testes unitarios realizados.
 
 
 ###### 3 - Pontos a serem implementados:
@@ -61,9 +65,11 @@ no qual sua função é a cada 60 minutos:
 
 
 ###### 4 -  Melhorias:
+
 - Alterar armazenamento do Datalake para o S3, com a premissas de camadas de dados.
 
 
 ###### 5 - Arquitetura inicial:
-[Arquitetura](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/Arquitetura.png)
+
+	[Arquitetura](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/Arquitetura.png)
 
