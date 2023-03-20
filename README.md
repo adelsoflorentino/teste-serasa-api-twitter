@@ -1,7 +1,7 @@
-###### Case Serasa Experian ######
+## Case Serasa Experian ##
 
 
-###### 1 - O Case:
+## 1 - O Case:
 
 ## Neste case, você precisa implementar uma solução que: 
 - Consiga buscar tweets com uma determinada “HashTag”, por exemplo, #covid19;
@@ -20,7 +20,7 @@
 - Boas práticas de Data Engineering;
 
 
-###### 2 - A Solução:
+## 2 - A Solução:
 
 Esta aplicação foi desenvolvida em Python utilizando [Pyspark](https://spark.apache.org/docs/latest/api/python/index.html) 
 e [Tweepy](https://www.tweepy.org/) para conexão com a API do Twitter.
@@ -58,18 +58,18 @@ Criar um Datalake com os dados salvos na *layer_bronze* no qual sua função é 
 Testes unitarios realizados.
 
 
-###### 3 - Pontos a serem implementados:
+## 3 - Pontos a serem implementados:
 
 - A implementação de um orquestrador do fluxo de dados (Airflow), conforme sugerido no case;
 - A criação de um ambiente Docker/Compose para deploy da aplicação, conforme sugerido no case;
 
 
-###### 4 -  Melhorias:
+## 4 -  Melhorias:
 
 - Alterar armazenamento do Datalake para o S3, com a premissas de camadas de dados.
 
 
-###### 5 - Arquitetura inicial:
+## 5 - Arquitetura inicial:
 
 [Arquitetura](https://github.com/adelsoflorentino/teste-serasa-api-twitter/blob/main/Arquitetura.png)
 
